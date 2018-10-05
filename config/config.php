@@ -7,6 +7,5 @@
  */
 
 define('APP', EMP.'app/');
-define('CORE', EMP.'emp/');
-define('DEBUG', true);
+define('APP_DEBUG', true);
 

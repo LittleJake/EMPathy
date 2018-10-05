@@ -9,6 +9,7 @@
 namespace emp;
 
 class emp {
+    //已加载类文件列表
     static private $classMap = array();
 
 
@@ -18,6 +19,8 @@ class emp {
         $route = new \emp\route();
     }
 
+
+    //自动加载类文件
     static public function load($class) {
         if(isset(self::$classMap[$class]))
             return true;

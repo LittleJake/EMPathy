@@ -6,18 +6,22 @@
  * Time: 2:32 PM
  */
 
-define('EMP', realpath(' /'));
 define('CONF', EMP.'config/');
 
-include CONF.'config.php';
+require CONF.'config.php';
+require CORE.'common/func.php';
+require CORE.'emp.php';
 
-if(DEBUG)
+//DB
+$db = require CONF.'db_config.php';
+
+
+if(APP_DEBUG)
     ini_set('display_errors', 'On');
 else
     ini_set('display_errors', 'Off');
 
-include CORE.'common/func.php';
-include CORE.'emp.php';
+
 
 
 spl_autoload_register('\emp\emp::load');
