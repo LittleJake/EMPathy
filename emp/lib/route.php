@@ -11,8 +11,29 @@ namespace emp\lib;
 
 class route
 {
+    private $c;
+    private $a;
+
     public function __construct(){
         p('route ok');
+
+        p($_SERVER);
+
+
+        if(ACCESS_MODE == 0) {
+            //普通模式
+            $a = $_REQUEST['a'];
+            $c = $_REQUEST['c'];
+        } else if (ACCESS_MODE == 1) {
+            //pathinfo模式
+
+        }
+
+        p(array($a, $c));
+
+
+
+        $_SERVER;
     }
 
 }

@@ -16,7 +16,8 @@ class emp {
     static public function start() {
         p('emp core start');
 
-        $route = new \emp\route();
+        $route = new \emp\lib\route();
+
     }
 
 
