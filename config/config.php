@@ -11,9 +11,9 @@ define('APP_DEBUG', true);
 
 /*
  * ACCESS_MODE
- * 0 - 普通模式
- * 1 - pathinfo
+ * 0 - 普通模式     /index.php?c=index&a=index
+ * 1 - pathinfo    /index.php/index/index
  *
  */
 
-define('ACCESS_MODE', 0);
+define('ACCESS_MODE', 1);

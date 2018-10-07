@@ -26,14 +26,18 @@ class route
             $c = $_REQUEST['c'];
         } else if (ACCESS_MODE == 1) {
             //pathinfo模式
+            p($_SERVER['PATH_INFO']);
 
+            $path = explode('/', trim($_SERVER['PATH_INFO'], '/'));
+            $a = isset($path[0])?$path[0]:'index';;
+            $c = isset($path[1])?$path[1]:'index';
+            p($path);
         }
 
         p(array($a, $c));
 
 
 
-        $_SERVER;
     }
 
 }
