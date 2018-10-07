@@ -6,7 +6,7 @@
  * Time: 2:49 PM
  */
 
-namespace emp;
+namespace emp\lib;
 
 
 class route
