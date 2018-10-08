@@ -8,7 +8,7 @@
 
 namespace emp;
 
-class emp {
+class EMPathy {
     //已加载类文件列表
     static private $classMap = array();
 

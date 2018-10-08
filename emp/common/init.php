@@ -10,7 +10,7 @@ define('CONF', EMP.'config/');
 
 require CONF.'config.php';
 require CORE.'common/func.php';
-require CORE.'emp.php';
+require CORE.'EMPathy.php';
 
 //DB
 $db = require CONF.'db_config.php';
@@ -24,5 +24,5 @@ else
 
 
 
-spl_autoload_register('\emp\emp::load');
+spl_autoload_register('\emp\EMPathy::load');
 

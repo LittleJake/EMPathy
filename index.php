@@ -14,4 +14,4 @@ define('CORE', EMP.'emp/');
 
 require CORE.'/common/init.php';
 
-\emp\emp::start();
+\emp\EMPathy::start();
