@@ -9,6 +9,7 @@
 namespace emp;
 
 class EMPathy {
+
     //已加载类文件列表
     static private $classMap = array();
 
@@ -17,6 +18,33 @@ class EMPathy {
         p('emp core start');
 
         $route = new \emp\lib\route();
+
+        $module = c('APP').c('CONTROLLER_DIR').$route ->controller.c('CONTROLLER_SUFFIX');
+        $controller_file = $module.".php";
+
+        $a = $route ->action.c('ACTION_SUFFIX');
+
+        if(is_file($controller_file)) {
+            p($controller_file);
+
+            require $controller_file;
+
+
+            $controller = '\\'.str_replace("/","\\", $module);
+
+            $c = new $controller();
+
+            $c ->$a();
+
+
+
+        }
+        else
+            p("控制器".$route->controller."不存在");
+
+
+
+
 
     }
 

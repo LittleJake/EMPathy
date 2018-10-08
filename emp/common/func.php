@@ -24,3 +24,8 @@ function c($conf = '') {
 
     return '';
 }
+
+function error_func() {
+    $e = error_get_last();
+    p($e);
+}

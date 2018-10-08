@@ -23,6 +23,6 @@ else
 
 
 
-
+register_shutdown_function('error_func');
 spl_autoload_register('\emp\EMPathy::load');
 
