@@ -19,5 +19,15 @@ return array(
      */
 
     'ACCESS_MODE' => 1,
+
+    'CONTROLLER_SUFFIX' => 'Controller',
+
+    'ACTION_SUFFIX' => 'Action',
+
+    'CONTROLLER_DIR' => 'Controller/',
+
+    'TEMPLATE_DIR' => 'resources/view',
+
+
 );
 
