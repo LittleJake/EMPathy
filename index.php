@@ -11,7 +11,7 @@
 define('EMP', realpath(' /'));
 define('CORE', EMP.'emp/');
 
-
 require CORE.'/common/init.php';
+
 
 \emp\EMPathy::start();

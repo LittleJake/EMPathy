@@ -8,15 +8,15 @@
 
 define('CONF', EMP.'config/');
 
-require CONF.'config.php';
+$CONF = require CONF.'config.php';
 require CORE.'common/func.php';
 require CORE.'EMPathy.php';
 
 //DB
-$db = require CONF.'db_config.php';
+$DB = require CONF.'db_config.php';
 
 
-if(APP_DEBUG)
+if($CONF['APP_DEBUG'])
     ini_set('display_errors', 'On');
 else
     ini_set('display_errors', 'Off');
