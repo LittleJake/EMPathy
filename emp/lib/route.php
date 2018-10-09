@@ -25,8 +25,9 @@ class route
 
         if(c('ACCESS_MODE') == 0) {
             //普通模式
-            $this ->action = $_REQUEST['a'];
-            $this ->controller = $_REQUEST['c'];
+
+            $this ->action = isset($_REQUEST['a'])?$_REQUEST['a']:'index';
+            $this ->controller = isset($_REQUEST['c'])?$_REQUEST['c']:'index';
 
         } else if (c('ACCESS_MODE') == 1) {
             //pathinfo模式

@@ -20,6 +20,7 @@ class EMPathy {
         $route = new \emp\lib\route();
 
         $module = c('APP').c('CONTROLLER_DIR').$route ->controller.c('CONTROLLER_SUFFIX');
+
         $controller_file = $module.".php";
 
         $a = $route ->action.c('ACTION_SUFFIX');
@@ -43,7 +44,7 @@ class EMPathy {
             p("控制器".$route->controller."不存在");
 
 
-
+        new \emp\lib\model();
 
 
     }
