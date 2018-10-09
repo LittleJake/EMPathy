@@ -18,7 +18,7 @@ return array(
      *
      */
 
-    'ACCESS_MODE' => 1,
+    'ACCESS_MODE' => 0,
 
     'CONTROLLER_SUFFIX' => 'Controller',
 
