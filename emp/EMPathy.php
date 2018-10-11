@@ -12,8 +12,9 @@ class EMPathy {
 
     //已加载类文件列表
     static private $classMap = array();
+    private $assign;
 
-
+    //启动部分
     static public function start() {
         p('emp core start');
 
@@ -63,5 +64,10 @@ class EMPathy {
                 return false;
             }
         }
+    }
+
+    //分配变量
+    public function assign($name, $data) {
+        $this -> assign[$name] = $data;
     }
 }
