@@ -45,7 +45,7 @@ class EMPathy {
             p("控制器".$route->controller."不存在");
 
 
-        new \emp\lib\model();
+        //new \emp\lib\model();
 
 
     }

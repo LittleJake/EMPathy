@@ -15,6 +15,9 @@ require CORE.'EMPathy.php';
 //DB
 //$DB = require CONF.'db_config.php';
 
+register_shutdown_function('error_func');
+spl_autoload_register('\emp\EMPathy::load');
+
 
 if(c('APP_DEBUG'))
     ini_set('display_errors', 'On');
@@ -23,6 +26,5 @@ else
 
 
 
-register_shutdown_function('error_func');
-spl_autoload_register('\emp\EMPathy::load');
+
 

@@ -17,12 +17,12 @@ function p($s){
 
 //返回设置
 function c($conf = '') {
-    $c = require CONF.'config.php';
+    $c = \emp\lib\conf::get($conf);
 
-    if(isset($c[$conf]))
-        return $c[$conf];
+    if(isset($c))
+        return $c;
 
-    return '';
+    return null;
 }
 
 function error_func() {

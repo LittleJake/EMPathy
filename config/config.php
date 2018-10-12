@@ -18,7 +18,7 @@ return array(
      *
      */
 
-    'ACCESS_MODE' => 0,
+
 
     'CONTROLLER_SUFFIX' => 'Controller',
 
@@ -27,6 +27,15 @@ return array(
     'CONTROLLER_DIR' => 'Controller/',
 
     'TEMPLATE_DIR' => 'resources/view',
+
+    'ROUTE' => [
+        'ACCESS_MODE' => 0,
+
+        'DEFAULT_CONTROLLER' => 'index',
+
+        'DEFAULT_ACTION' => 'index',
+    ],
+
 
 
 );
