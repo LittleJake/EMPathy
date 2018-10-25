@@ -16,9 +16,12 @@ class EMPathy {
 
     //启动部分
     static public function start() {
-        p('emp core start');
+        \emp\lib\log::init();
+        \emp\lib\log::log('emp core start');
 
         $route = new \emp\lib\route();
+
+
 
         $module = c('APP').c('CONTROLLER_DIR').$route ->controller.c('CONTROLLER_SUFFIX');
 
@@ -69,5 +72,10 @@ class EMPathy {
     //分配变量
     public function assign($name, $data) {
         $this -> assign[$name] = $data;
+    }
+
+    static public function error_func() {
+        $e = error_get_last();
+        p($e['message']);
     }
 }

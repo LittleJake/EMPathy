@@ -15,7 +15,7 @@ require CORE.'EMPathy.php';
 //DB
 //$DB = require CONF.'db_config.php';
 
-register_shutdown_function('error_func');
+register_shutdown_function('\emp\EMPathy::error_func');
 spl_autoload_register('\emp\EMPathy::load');
 
 

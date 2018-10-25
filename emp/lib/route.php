@@ -15,7 +15,7 @@ class route
     public $action;
 
     public function __construct(){
-        p('route ok');
+        \emp\lib\log::log('route ok');
         //p($_SERVER);
 
         $default = c('ROUTE');

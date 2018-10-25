@@ -6,6 +6,7 @@
  * Time: 2:30 PM
  */
 
+
 function p($s){
     if(is_bool($s))
         var_dump($s);
@@ -25,7 +26,4 @@ function c($conf = '') {
     return null;
 }
 
-function error_func() {
-    $e = error_get_last();
-    p($e);
-}
+

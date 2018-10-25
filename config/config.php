@@ -36,7 +36,9 @@ return array(
         'DEFAULT_ACTION' => 'index',
     ],
 
+    'LOG' => 'file',
 
+    'LOG_PATH' => EMP.'log/',
 
 );
 
