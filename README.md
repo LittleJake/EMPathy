@@ -1,6 +1,6 @@
 # EMPathy PHP 框架
 
-![](https://travis-ci.org/LittleJake/EMPathy.svg?branch=master)    ![](https://img.shields.io/hexpm/l/plug.svg)    ![](https://img.shields.io/badge/php%20tested-5.6.25-brightgreen.svg)
+![](https://travis-ci.org/LittleJake/EMPathy.svg?branch=master)    ![](https://img.shields.io/hexpm/l/plug.svg)    ![](https://img.shields.io/badge/php_tested-5.6.25-brightgreen.svg)
 
 
 
