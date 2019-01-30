@@ -13,7 +13,7 @@ class log
 {
     private static $class;
     public static function init(){
-        $c = "\\emp\\lib\\driver\\" . conf::get('LOG');
+        $c = '\emp\lib\driver\\' . conf::get('LOG');
 
         self::$class = new $c();
         self::$class->log("LOG START");

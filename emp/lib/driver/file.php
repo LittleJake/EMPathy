@@ -8,11 +8,11 @@
 
 namespace emp\lib\driver;
 
-
 use emp\lib\conf;
 
 class file
 {
+
     private $path;
 
     public function __construct(){
@@ -20,7 +20,12 @@ class file
     }
 
     public function log($msg = ''){
-
+        /**
+         * 写入记录文件
+         * @param $msg 写入信息
+         * @return boolean 返回写入结果
+         *
+         */
 
         if(!is_dir($this->path)){
             mkdir($this->path,0777);
